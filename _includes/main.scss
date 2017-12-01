@@ -1,0 +1,79 @@
+@import "hel-bootstrap-3/src/sass/helsinki-variables";
+@import "hel-bootstrap-3/src/sass/application-variables";
+@import "hel-bootstrap-3/src/sass/theme-bootstrap-variables";
+@import "bootstrap";
+@import "hel-bootstrap-3/src/sass/theme-custom-styles";
+
+body {
+  background-color: $hel-metro;
+  color: $white;
+}
+
+.footer-branding {
+  margin: $line-height-computed * 2 0 $line-height-computed * 4;
+}
+
+.error-footer {
+  text-align: right;
+}
+
+.list-group-item {
+  text-align: center;
+  font-weight: 600;
+}
+
+.error-headers {
+  margin: 0 0 $line-height-computed;
+  text-align: center;
+  h1 {
+    font-size: 48px;
+    margin: 0;
+  }
+  @media only screen and (min-width : 992px) {
+    margin: $line-height-computed * 3 0 0;
+    text-align: left;
+    h1 {
+      font-size: 72px;
+      margin: 0;
+    }
+  }
+}
+
+
+.error-description {
+  //margin: $line-height-computed * 2;
+  text-align: center;
+  border: 0;
+  border-top: 2px solid $white;
+  padding: $line-height-computed / 2 0 0 0;
+  margin-bottom: $line-height-computed;
+
+  @media only screen and (min-width : 992px) {
+    border: 0;
+    border-left: 2px solid $white;
+    padding: 0 0 0 $line-height-computed;
+    text-align: left;
+    font-size: $font-size-large;
+  }
+}
+
+.http-illustration {
+  padding: $line-height-computed;
+  background-color: $white;
+  margin: $line-height-computed * 2 auto 0 auto;
+  border-radius: 100%;
+  height: 240px;
+  width: 240px;
+
+  svg {
+    max-height: 100%;
+    max-width: 100%;
+  }
+
+  @media only screen and (min-width : 992px) {
+    margin: $line-height-computed * 2 auto;
+    height: 360px;
+    width: 360px;
+  }
+}
+

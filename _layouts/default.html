@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>{% if page.title %} {{ page.title }} | {% endif %} {{ site.name }}</title>
+        <meta name="description" content="{{site.description}}"/>
+        <meta name="author" content="{{site.author}}"/>
+        <link rel="author" href="humans.txt"/>
+
+        {% capture styles %}
+          {% include main.scss %}
+        {% endcapture %}
+
+        <style>
+          {{ styles | scssify }}
+        </style>
+        <!--[if IE 7]><link rel="stylesheet" href="{{site.baseurl}}/resources/fontello/css/fontello-ie7.css"><![endif]-->
+    </head>
+
+    <body>
+
+        <main>
+          <div class="container">
+            {{ content }}
+          </div>
+        </main>
+
+        <footer class="error-footer">
+          <div class="container">
+            <div class="footer-branding">
+              <a to="/">{% svg node_modules/hel-bootstrap-3/src/assets/helsinki-logo-white.svg width=150 foo="bar" %}</a>
+            </div>
+          </div>
+        </footer>
+
+    </body>
+
+</html>
