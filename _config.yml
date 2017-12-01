@@ -22,6 +22,7 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  City-of-Helsinki
 
 # Build settings
+destination: docs
 markdown: kramdown
 plugins:
   - jekyll-feed
