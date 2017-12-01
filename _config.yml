@@ -21,6 +21,10 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  City-of-Helsinki
 
+repository: "terotic/http-status-pages"
+baseurl: "/http-status-pages"
+url : https://terotic.github.io/http-status-pages/
+
 # Build settings
 destination: docs
 markdown: kramdown
